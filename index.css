@@ -570,14 +570,23 @@ a:hover {
   }
 }
 
-.section34 .section4 .container-fluid .row .textGroup h4 {
+.section34 .section4 .container-fluid .row .textGroup .text_black {
+  color: black;
+  text-decoration: none;
+}
+
+.section34 .section4 .container-fluid .row .textGroup .text_black h4 {
   position: relative;
 }
 
 @media screen and (max-width: 1300px) {
-  .section34 .section4 .container-fluid .row .textGroup p {
+  .section34 .section4 .container-fluid .row .textGroup .text_black p {
     line-height: 25px;
   }
+}
+
+.section34 .section4 .container-fluid .row .textGroup .text_black:hover {
+  color: white;
 }
 
 .section34 .section4 .container-fluid .row .imgT {

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>給我擲筊</title>
+    <link rel="shortcut icon" href="./img/fackLogo_icon.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./擲筊.css">
+
+</head>
+
+<body>
+    <section>
+
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md">
+
+                <a class="navbar-brand d-flex" href="../index.html">
+
+                    <img src="./img/fackLogo.png" height="50" class="d-inline-block align-top" alt="">
+
+                    <div class="logoText">
+                        <img src="./img/給我一個TEMPLE-logo.png" height="30" class="d-inline-block align-top" alt="">
+                    </div>
+                </a>
+
+                <!-- nav button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon "><img src="./img/menu.svg" alt=""></span>
+                </button>
+
+                <div class="collapse navbar-collapse navList" id="navbarNav">
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">廟宇旅廊<span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <div class="accordion" id="plusCollapes">
+                            <li class="nav-item">
+                                <a class="nav-link plus " data-toggle="collapse" data-target="#collapse1"
+                                    href="#slideIn" data-parent="#plusCollapes">拜有保庇</a>
+                                <div id="collapse1" class="collapse">
+                                    <a href="../拜有保庇/愛情.html">求愛情</a> <br>
+                                    <a href="../拜有保庇/財運.html">求財運</a> <br>
+                                    <a href="../拜有保庇/學業.html">求學業</a> <br>
+                                    <a href="../拜有保庇/事業.html">求事業</a>
+                                </div>
+                            </li>
+                        </div>
+
+                        <div class="accordion">
+                            <li class="nav-item">
+                                <a class="nav-link plus" href="#section4" data-toggle="collapse"
+                                    data-target="#collapse2" data-parent="#plusCollapes">廟語解煩</a>
+                                <div id="collapse2" class="collapse">
+                                    <a href="../抽籤/draw.html">線上求籤</a> <br>
+                                    <a href="../擲筊/擲筊.html">線上擲茭</a>
+                                </div>
+                            </li>
+                        </div>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="../功德元滿/page4.html">功德元滿</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="../有神麼事/page5.html">有神麼事</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+
+
+        <div class="container">
+            <div class="content">
+                <img class="top_img" src="./img/線上擲筊.jpg" alt="" style="width: 100%;">
+                <section class="net">
+                    <!-- 網頁1 -->
+                    <div id="content_0">
+                        <div class="top content-textB2">
+                            <p>一、稟告自己的姓名、出生年月日時、年齡、地址、祈求神明聖示指點的事由。</p>
+                            <p>二、詢問事項一次以一事為原則，稟明敘述時，應條理分明，簡單扼要，避免囉唆冗長而失去重點。</p>
+                            <p>三、稟報完畢後，先暫候數十秒鐘，讓神明有所時間斟酌一番，接著才進行擲筊的動作。</p>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="bottom content-textB2">
+                            <p>聖筊：呈現一凸、一平，表示神明聖裁「對、好、可以、肯定、贊同、可以」。</p>
+                            <p>笑筊：呈現平、平，表示陳述不清楚無法裁示。代表「笑笑、不知如何回答、信徒講述不清、信徒已有答案何必再問」。</p>
+                            <p>陰筊：呈現凸、凸，表示神明聖裁「不對、不好、不可以、不贊同、否定」。依廟宇傳統，凡是重大事情獲陰筊時，不宜於短期內再請筊。</p>
+                        </div>
+                        <div id="content_1">
+                            <div class="content-textB3">
+
+                                <div id="cyc_draw1">
+                                    <img src="./img/擲筊/A1.gif" alt="" width="190">
+                                </div>
+                                <button class="btn_class" id="slot" onclick="slotit1();">擲&nbsp;&nbsp;&nbsp;筊</button>
+                            </div>
+
+                        </div>
+                        <h1 class="title">線上擲筊</h1>
+                    </div>
+                    <!-- /網頁1 -->
+
+                    <!-- 網頁2 -->
+                    <div id="pc_content_2">
+                        <h1 class="title">線上擲筊</h1>
+                        <div class="top content-textB2">
+                            <p>一、稟告自己的姓名、出生年月日時、年齡、地址、祈求神明聖示指點的事由。</p>
+                            <p>二、詢問事項一次以一事為原則，稟明敘述時，應條理分明，簡單扼要，避免囉唆冗長而失去重點。</p>
+                            <p>三、稟報完畢後，先暫候數十秒鐘，讓神明有所時間斟酌一番，接著才進行擲筊的動作。</p>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="bottom content-textB2">
+                            <p>聖筊：呈現一凸、一平，表示神明聖裁「對、好、可以、肯定、贊同、可以」。</p>
+                            <p>笑筊：呈現平、平，表示陳述不清楚無法裁示。代表「笑笑、不知如何回答、信徒講述不清、信徒已有答案何必再問」。</p>
+                            <p>陰筊：呈現凸、凸，表示神明聖裁「不對、不好、不可以、不贊同、否定」。依廟宇傳統，凡是重大事情獲陰筊時，不宜於短期內再請筊。</p>
+                        </div>
+                        <div id="slotresult">
+                            <img id="result" src="./img/擲筊/A1-2.png" width="150">
+                        </div>
+                        <div class="text-body">
+                            <button class="btn_class" id="draw_again" onclick="slotit1();">重新求筊</button>
+                        </div>
+                    </div>
+                    <!-- /網頁2 -->
+                </section>
+                <!-- 手機1 -->
+                <section class="mobil">
+                    <div id="mobil_content_0">
+                        <div class="top content-textB2">
+                            <p>一、稟告自己的姓名、出生年月日時、年齡、地址、祈求神明聖示指點的事由。</p>
+                            <p>二、詢問事項一次以一事為原則，稟明敘述時，應條理分明，簡單扼要，避免囉唆冗長而失去重點。</p>
+                            <p>三、稟報完畢後，先暫候數十秒鐘，讓神明有所時間斟酌一番，接著才進行擲筊的動作。</p>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="bottom content-textB2">
+                            <p>聖筊：呈現一凸、一平，表示神明聖裁「對、好、可以、肯定、贊同、可以」。</p>
+                            <p>笑筊：呈現平、平，表示陳述不清楚無法裁示。代表「笑笑、不知如何回答、信徒講述不清、信徒已有答案何必再問」。</p>
+                            <p>陰筊：呈現凸、凸，表示神明聖裁「不對、不好、不可以、不贊同、否定」。依廟宇傳統，凡是重大事情獲陰筊時，不宜於短期內再請筊。</p>
+                        </div>
+                        <div id="content_1">
+                            <div class="content-textB3">
+
+                                <div id="mobil_cyc_draw1">
+                                    <img src="./img/擲筊/A1.gif" alt="" width="190">
+                                </div>
+                                <button class="btn_class" id="slot" onclick="slotit2();">擲&nbsp;&nbsp;&nbsp;筊</button>
+                            </div>
+
+                        </div>
+                        <h1 class="title">線上擲筊</h1>
+                    </div>
+                </section>
+                <!-- /手機1 -->
+                <!-- 手機2 -->
+                <div id="mobil_content_2">
+                    <h1 class="title">線上擲筊</h1>
+                    <div id="slotresult">
+                        <img id="mobil_result" src="./img/擲筊/A1-2.png" width="150">
+                    </div>
+                    <div class="text-body">
+                        <button class="btn_class" id="draw_again" onclick="slotit2();">重新求筊</button>
+                    </div>
+                    <div class="bottom content-textB2">
+                        <p>聖筊：呈現一凸、一平，表示神明聖裁「對、好、可以、肯定、贊同、可以」。</p>
+                        <p>笑筊：呈現平、平，表示陳述不清楚無法裁示。代表「笑笑、不知如何回答、信徒講述不清、信徒已有答案何必再問」。</p>
+                        <p>陰筊：呈現凸、凸，表示神明聖裁「不對、不好、不可以、不贊同、否定」。依廟宇傳統，凡是重大事情獲陰筊時，不宜於短期內再請筊。</p>
+                    </div>
+
+                </div>
+                <!-- /手機2 -->
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="text-white text-center m-auto">版權聲明：此網頁僅供108年跨平台互動設計網站前端實作班學習使用。</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in'
+        });
+
+        // collapse 收合
+        (function ($) {
+            var $document = $(document);
+            var $body = $(document.body);
+
+            // Wrap everything in a DOM ready handler.
+            $document.ready(function () {
+
+                // Save the jQuery instances (for performance).
+                var $collapse1 = $('#collapse1');
+                var $collapse2 = $('#collapse2');
+
+                // Variable for saving which navbar collapse is currently open.
+                var $open = $();
+
+                // For performance reasons, bind evens directly on the document. jQuery
+                // allows you to pass a targeting selector between the event and handler
+                // so it will only call said handler when the event matches said selector.
+                $document
+                    // Bind "show" event for first navbar collapse.
+                    .on('show.bs.collapse', $collapse1, function (e) {
+                        // Indicate that the first is open.
+                        $open = $(e.target);
+
+                        // Collapse the first if it's not the one that just opened.
+                        if (!$collapse1.is($open)) {
+                            $collapse1.collapse('hide');
+                        }
+                        // Collapse the second if it's not the one that just opened.
+                        else if (!$collapse2.is($open)) {
+                            $collapse2.collapse('hide');
+                        }
+
+                        // Add the body class.
+                        $body.addClass('overlay-is-navbar-collapse');
+                    })
+                    // Bind "hide" event for first navbar collapse.
+                    .on('hide.bs.collapse', $collapse1, function (e) {
+                        // Indicate that the first is open.
+                        var $hide = $(e.target);
+
+                        // Remove the first as the opened navbar collapse.
+                        if ($collapse1.is($hide) && $collapse1.is($open)) {
+                            $open = $();
+                        }
+                        // Remove the second as the opened navbar collapse.
+                        else if ($collapse2.is($hide) && $collapse2.is($open)) {
+                            $open = $();
+                        }
+
+                        // Remove the body class if there is no open navbar collapse.
+                        if (!$open[0]) {
+                            $body.removeClass('overlay-is-navbar-collapse');
+                        }
+                    });
+            });
+        })(window.jQuery);
+
+
+
+
+
+
+    </script>
+    <script>
+
+        function slotit1() {
+            var slot_num = 1;
+            $("#content_0").css("display", "none");
+            $("#pc_content_2").fadeIn(800).css("display", "block");
+            slot_num = Math.floor(Math.random() * 4);
+            if (slot_num == 0) {
+                $("#result").attr("src", "./img/擲筊/A1-2.png");
+                $("#draw_again").show();
+                $("#result_title").css("font-size", "24px");
+                $("#slot").css("display", "none");
+                $("#cyc_draw1").css("display", "none");
+                $("#gogetit").css("display", "none");
+
+            } else if (slot_num > 2) {
+                $("#result").attr("src", "./img/擲筊/A1-3.png");
+                $("#draw_again").show();
+                $("#result_title").css("font-size", "24px");
+                $("#slot").css("display", "none");
+                $("#cyc_draw1").css("display", "none");
+                $("#gogetit").css("display", "none");
+
+            } else {
+                $("#result").attr("src", "./img/擲筊/A1-4.png");
+                $("#result_title").css("font-size", "24px");
+                $("#result_txt").text("重新求籤");
+                $("#result_txt").css("color", "red");
+                $("#draw_again").css("display", "block");
+                $("#slot").css("display", "none");
+                $("#cyc_draw1").css("display", "none");
+            }
+        }
+    </script>
+    <script>
+
+        function slotit2() {
+            var slot_num = 1;
+            $("#mobil_content_0").css("display", "none");
+            $("#mobil_content_2").fadeIn(800).css("display", "block");
+            slot_num = Math.floor(Math.random() * 4);
+            if (slot_num == 0) {
+                $("#mobil_result").attr("src", "./img/擲筊/A1-2.png");
+                $("#draw_again").show();
+                $("#result_title").css("font-size", "24px");
+                $("#slot").css("display", "none");
+                $("#mobil_cyc_draw1").css("display", "none");
+                $("#gogetit").css("display", "none");
+
+            } else if (slot_num > 2) {
+                $("#mobil_result").attr("src", "./img/擲筊/A1-3.png");
+                $("#draw_again").show();
+                $("#result_title").css("font-size", "24px");
+                $("#slot").css("display", "none");
+                $("#mobil_cyc_draw1").css("display", "none");
+                $("#gogetit").css("display", "none");
+
+            } else {
+                $("#mobil_result").attr("src", "./img/擲筊/A1-4.png");
+                $("#result_title").css("font-size", "24px");
+                $("#result_txt").text("重新求籤");
+                $("#result_txt").css("color", "red");
+                $("#mobil_draw_again").css("display", "block");
+                $("#slot").css("display", "none");
+                $("#cyc_draw1").css("display", "none");
+            }
+        }
+    </script>
+</body>
+
+</html>
