@@ -115,9 +115,6 @@ a:hover {
 }
 
 @media screen and (max-width: 991px) {
-  .container-fluid nav .navList .navbar-nav {
-    height: 90vh;
-  }
   .container-fluid nav .navList .navbar-nav .nav-item {
     font-size: 22px;
   }
