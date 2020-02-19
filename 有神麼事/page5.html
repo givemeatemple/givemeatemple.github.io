@@ -611,6 +611,63 @@
             })
         }
 
+                // collapse 收合
+                (function ($) {
+            var $document = $(document);
+            var $body = $(document.body);
+
+            // Wrap everything in a DOM ready handler.
+            $document.ready(function () {
+
+                // Save the jQuery instances (for performance).
+                var $collapse1 = $('#collapse1');
+                var $collapse2 = $('#collapse2');
+
+                // Variable for saving which navbar collapse is currently open.
+                var $open = $();
+
+                // For performance reasons, bind evens directly on the document. jQuery
+                // allows you to pass a targeting selector between the event and handler
+                // so it will only call said handler when the event matches said selector.
+                $document
+                    // Bind "show" event for first navbar collapse.
+                    .on('show.bs.collapse', $collapse1, function (e) {
+                        // Indicate that the first is open.
+                        $open = $(e.target);
+
+                        // Collapse the first if it's not the one that just opened.
+                        if (!$collapse1.is($open)) {
+                            $collapse1.collapse('hide');
+                        }
+                        // Collapse the second if it's not the one that just opened.
+                        else if (!$collapse2.is($open)) {
+                            $collapse2.collapse('hide');
+                        }
+
+                        // Add the body class.
+                        $body.addClass('overlay-is-navbar-collapse');
+                    })
+                    // Bind "hide" event for first navbar collapse.
+                    .on('hide.bs.collapse', $collapse1, function (e) {
+                        // Indicate that the first is open.
+                        var $hide = $(e.target);
+
+                        // Remove the first as the opened navbar collapse.
+                        if ($collapse1.is($hide) && $collapse1.is($open)) {
+                            $open = $();
+                        }
+                        // Remove the second as the opened navbar collapse.
+                        else if ($collapse2.is($hide) && $collapse2.is($open)) {
+                            $open = $();
+                        }
+
+                        // Remove the body class if there is no open navbar collapse.
+                        if (!$open[0]) {
+                            $body.removeClass('overlay-is-navbar-collapse');
+                        }
+                    });
+            });
+        })(window.jQuery);
 
 
     </script>

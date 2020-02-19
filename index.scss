@@ -102,10 +102,16 @@ a:hover {
 
         .nav-item {
           font-size: 15px;
+          text-align: center;
         }
 
-        @media screen and (max-width: 991px) {
-          // height: 90vh;
+        @media screen and (max-width: 991px){
+          width: 100%;
+        }
+
+        @media screen and (max-width: 767px) {
+          height: 90vh;
+          text-align: center;
           
           .nav-item {
             font-size: 22px;
